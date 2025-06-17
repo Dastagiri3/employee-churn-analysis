@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, UserX, Arrow_Up, Arrow_Down } from "lucide-react";
+import { Users, UserX, ArrowUp, ArrowDown } from "lucide-react";
 
 export const KPICards = () => {
   const kpis = [
@@ -57,9 +57,9 @@ export const KPICards = () => {
                   </p>
                   <div className="flex items-center mt-2">
                     {isIncrease ? (
-                      <Arrow_Up className="h-4 w-4 text-green-500 mr-1" />
+                      <ArrowUp className="h-4 w-4 text-green-500 mr-1" />
                     ) : (
-                      <Arrow_Down className="h-4 w-4 text-red-500 mr-1" />
+                      <ArrowDown className="h-4 w-4 text-red-500 mr-1" />
                     )}
                     <span className={`text-sm font-medium ${
                       isIncrease ? 'text-green-600' : 'text-red-600'
